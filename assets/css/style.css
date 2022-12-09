@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
+
+:root {
+    --core-font: 'Luxurious Roman', cursive;
+    --carmine: #8e001cff;
+    --purple-navy: #645986ff;
+    --honey-yellow: #ffb300ff;
+    --white: #fafafa;
+    --black: #000000ff;
+}
