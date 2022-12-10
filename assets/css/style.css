@@ -1,10 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
 
+/* Global Settings */ 
+
+* {
+    box-sizing: border-box;
+  }
+
 :root {
     --core-font: 'Luxurious Roman', cursive;
     --carmine: #8e001cff;
     --purple-navy: #645986ff;
     --honey-yellow: #ffb300ff;
-    --white: #fafafa;
+    --blur-white: #ffffffb3;
     --black: #000000ff;
 }
+
+body {
+    
+    font-family: var(--core-font);
+    background-image: url(../images/rome-background-image.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--blur-white);
+}
+
+.logo {
+    
+}
+
