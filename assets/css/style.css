@@ -83,8 +83,9 @@ h2 {
     text-decoration: none;
     color: var(--carmine);
     background: linear-gradient(90deg, rgba(255,179,0,1) 0%, rgb(255,179,0) 100%);
-    width: 17rem;
+    width: 20rem;
     padding: 1rem 1rem;
+    margin: 1rem;
     margin-bottom: 1 rem;
     border-radius: 4px;
 }
@@ -97,12 +98,26 @@ h2 {
     cursor: pointer;
 }
 
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#leaderboard-button {
+
+}
+
 /* Quiz Game */
 
 /* Media Queries */
 
 @media only screen and (max-width: 450px) {
-    .box-container {
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         width: 90vw;
+        height: 100vh;
+
     }
 }
