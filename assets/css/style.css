@@ -7,17 +7,18 @@
   }
 
 :root {
-    --core-font: 'Luxurious Roman', cursive;
+    --core-font: 'Gideon Roman', cursive;
     --carmine: #8e001cff;
     --purple-navy: #645986ff;
     --honey-yellow: #ffb300ff;
     --blur-white: #ffffffb3;
-    --black: #000000ff;
+    --basic-white: #ffffff;
+    --basic-black: #000000ff;
 }
 
 body {
-    
     font-family: var(--core-font);
+    color: var(--basic-white);
     background-image: url(../images/rome-background-image.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,5 +27,28 @@ body {
     background-color: var(--blur-white);
 }
 
-/* Quiz Game */
+.container {
+    width: 70vw; /*optional*/
+    height: 60vh;
+    margin: 20vh auto;
+    background: var(--carmine);
+    border: 6px solid var(--honey-yellow);
+    text-align: center;
+}
 
+
+@media only screen and (max-width: 450px) {
+    .box-container {
+        width: 90vw;
+    }
+}
+
+.title {
+    color: var(--honey-yellow);
+}
+
+.logo {
+
+}
+
+/* Quiz Game */
