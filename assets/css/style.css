@@ -140,9 +140,29 @@ h2 {
 }
 
 .choice-text {
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
 }
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hud-prefix {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
