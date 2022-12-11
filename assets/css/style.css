@@ -115,14 +115,48 @@ h2 {
 
 /* Quiz Game */
 
+.choice-container {
+    color: var(--basic-black);
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--honey-yellow);
+    font-size: 3rem;
+    min-width: 40rem;
+}
+
+.choice-container:hover {
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
+    cursor: pointer;
+    transition-duration: 90ms;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
+}
+
+.choice-prefix {
+    padding: 1.5rem 1.5rem;
+    color: var(--basic-black);
+}
+
+.choice-text {
+    padding: 1rem;
+    width: 100%;
+}
 /* Media Queries */
 
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .container {
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 90vw;
         height: 100vh;
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 20rem;
     }
 }
