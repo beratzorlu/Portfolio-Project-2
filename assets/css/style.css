@@ -30,20 +30,6 @@ body {
     background-color: var(--blur-white);
 }
 
-.hidden {
-    display: none;
-}
-
-/* Welcome Page */
-
-.container {
-    width: 70vw;
-    height: 60vh;
-    margin: 20vh auto;
-    background: var(--carmine);
-    border: 6px solid var(--honey-yellow);
-    text-align: center;
-}
 
 h1 {
     font-size: 4rem;
@@ -54,6 +40,35 @@ h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
 
+}
+
+.hidden {
+    display: none;
+}
+
+/* Welcome Page */
+
+.container {
+    width: 70vw;
+    height: 60vh;
+    margin: 0 auto;
+    background: var(--carmine);
+    border: 6px solid var(--honey-yellow);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -68,17 +83,17 @@ h2 {
     text-decoration: none;
     color: var(--carmine);
     background: linear-gradient(90deg, rgba(255,179,0,1) 0%, rgb(255,179,0) 100%);
-    width: 30rem;
+    width: 17rem;
     padding: 1rem 1rem;
     margin-bottom: 1 rem;
     border-radius: 4px;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in-out;
 }
 
 .button:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255,179,0,1);
-    transform: scale(1.5);
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
