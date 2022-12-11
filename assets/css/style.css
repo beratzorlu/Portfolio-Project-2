@@ -91,7 +91,7 @@ h2 {
 }
 
 .button:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,179,0,1);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
     transition-duration: 100ms;
     transition-timing-function: ease-in-out;
     transform: scale(1.1);
@@ -105,7 +105,11 @@ h2 {
 }
 
 #leaderboard-button {
+    background: linear-gradient(90deg, rgb(249, 249, 249)0%, rgb(255,179,0) 100%);
+}
 
+#leaderboard-button:hover {
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.9);
 }
 
 /* Quiz Game */
