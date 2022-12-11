@@ -30,10 +30,14 @@ body {
     background-color: var(--blur-white);
 }
 
+.hidden {
+    display: none;
+}
+
 /* Welcome Page */
 
 .container {
-    width: 70vw; /*optional*/
+    width: 70vw;
     height: 60vh;
     margin: 20vh auto;
     background: var(--carmine);
@@ -48,11 +52,34 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    margin-bottom: 2rem;
+
 }
 
 .title {
     color: var(--honey-yellow);
     font-size: 4rem;
+}
+
+.button {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--carmine);
+    background: linear-gradient(90deg, rgba(255,179,0,1) 0%, rgb(255,179,0) 100%);
+    width: 30rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1 rem;
+    border-radius: 4px;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,179,0,1);
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
 /* Quiz Game */
