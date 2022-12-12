@@ -115,6 +115,10 @@ h2 {
 
 /* Quiz Game */
 
+#question {
+    font-size: 2rem;
+}
+
 .choice-container {
     color: var(--basic-black);
     display: flex;
@@ -157,11 +161,28 @@ h2 {
     justify-content: space-between;
 }
 
-#hud-prefix {
+.hud-prefix {
     font-size: 2rem;
     text-align: center;
 }
 
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 2rem;
+    border: 0.2rem solid var(--basic-white);
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: var(--purple-navy);
+    width: 0%;
+}
 
 /* Media Queries */
 
