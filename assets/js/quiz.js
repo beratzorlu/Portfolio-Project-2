@@ -53,7 +53,7 @@ function getNewQuestion() {
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innterText = activeQuestion['choice' + number]
+        choice.innterText = currentQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1);
@@ -69,14 +69,27 @@ choices.forEach(choice => {
        const selectedChoice = e.target
        const selectedAnswer = selectedChoice['number'];
 
-       let classToApply = selectedAnswer == activeQuestion.answer ? 'correct' : 'incorrect';
+       let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
        if(classToApply === 'correct') {
-        incrementScore(SCORE_POINTS)
+           incrementScore(SCORE_POINTS);
        }
+
+       selectedChoice.parentElement.class.classList.add(classToApply);
+
+       setTimeout(() => {
+        selectedChoice.parentElement.classList.remove(classToApply);
+        getNewQuestion();
+       }, 1000);
     })
 })
 
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
+
+startGame()
 
 
 

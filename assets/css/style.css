@@ -149,11 +149,11 @@ h2 {
 }
 
 .correct {
-    background-color: green;
+    background: green;
 }
 
 .incorrect {
-    background-color: red;
+    background: red;
 }
 
 #hud {
