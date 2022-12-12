@@ -38,13 +38,13 @@ function startGame() {
 
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('RecentScore', score);
+        localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('/end.html')
     }
 
     questionCounter++;
-    PROGRESSTEXT.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     PROGRESSBARFULL.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
