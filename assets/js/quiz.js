@@ -75,7 +75,7 @@ choices.forEach(choice => {
            incrementScore(SCORE_POINTS);
        }
 
-       selectedChoice.parentElement.class.classList.add(classToApply);
+       selectedChoice.parentElement.classList.add(classToApply);
 
        setTimeout(() => {
         selectedChoice.parentElement.classList.remove(classToApply);
