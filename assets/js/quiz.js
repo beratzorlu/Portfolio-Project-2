@@ -45,33 +45,34 @@ function getNewQuestion() {
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    PROGRESSBARFULL.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
-    activeQuestion = availableQuestions[questionsIndex];
-    question.innerText = activeQuestion.question;
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerText = currentQuestion.question;
 
-    CHOICES.forEach(function choice() {
+    choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innterText = activeQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1);
 
-    answerAccept = true;
+    acceptingAnswers = true;
 }
 
-CHOICES.forEach(function choice() {
+choices.forEach(choice => {
     choice.addEventListener('click', e => {
-       if(!answerAccept) return
+       if(!acceptingAnswers) return
 
-       answerAccept = false;
+       acceptingAnswers = false;
        const selectedChoice = e.target
        const selectedAnswer = selectedChoice['number'];
 
-       let classToApply = selectedAnswer == activeQuestion.answer ? 'correct' : 'incorrect'
+       let classToApply = selectedAnswer == activeQuestion.answer ? 'correct' : 'incorrect';
 
        if(classToApply === 'correct') {
+        incrementScore(SCORE_POINTS)
        }
     })
 })
