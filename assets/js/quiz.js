@@ -36,19 +36,19 @@ let questions = [
  * Displays timer countdown to the player
  */
 
-var second = 60;
+var second = 3;
 var timeInterval = setInterval(quizTimer, 1000);
 
 function quizTimer() {
     document.getElementById('timer').innerHTML = second + "s left";
     second--;
-    console.log(quizTimer)
+    if (second === -2) {
+        clearInterval(timeInterval);
+        document.getElementById('timer').innerHTML = "0s left";
+        alert('Senator, you have run out of time!');
+        return window.location.assign('index.html');
+    }
 }
-
-
-
-
-
 
 /** 
  * Start the game by setting the default value to the score counter 
