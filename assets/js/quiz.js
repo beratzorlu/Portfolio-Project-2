@@ -32,6 +32,24 @@ let questions = [
     },
 ]
 
+/**
+ * Displays timer countdown to the player
+ */
+
+var second = 60;
+var timeInterval = setInterval(quizTimer, 1000);
+
+function quizTimer() {
+    document.getElementById('timer').innerHTML = second + "s left";
+    second--;
+    console.log(quizTimer)
+}
+
+
+
+
+
+
 /** 
  * Start the game by setting the default value to the score counter 
  * and calling the first question 
