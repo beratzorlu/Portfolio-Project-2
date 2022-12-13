@@ -21,7 +21,15 @@ let questions = [
         choice3: 'Jupiter',
         choice4: 'Mars',
         answer: 4,
-    }
+    },
+    {
+        question: 'Which was the first Roman road?',
+        choice1: 'Via Egnatia',
+        choice2: 'Via Valeria',
+        choice3: 'Via Appia',
+        choice4: 'Via Flaminia',
+        answer: 3,
+    },
 ]
 
 /** 
@@ -36,16 +44,16 @@ function startGame() {
     getNewQuestion()
 }
 
-function getNewQuestion() {
+getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html')
+        return window.location.assign('index.html') /* Take player to end game*/
     }
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -53,7 +61,7 @@ function getNewQuestion() {
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innterText = currentQuestion['choice' + number]
+        choice.innerText = currentQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1);
@@ -66,8 +74,8 @@ choices.forEach(choice => {
        if(!acceptingAnswers) return
 
        acceptingAnswers = false;
-       const selectedChoice = e.target
-       const selectedAnswer = selectedChoice. dataset['number'];
+       const selectedChoice = e.target;
+       const selectedAnswer = selectedChoice.dataset['number'];
 
        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
