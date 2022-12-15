@@ -113,6 +113,20 @@ h2 {
     box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.9);
 }
 
+/* Instructions Page */
+
+table {
+    font-size: 10rem;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-top: 1rem;
+    font-size: 4rem;
+    justify-content: left;
+}
+
 /* Quiz Game */
 
 #question {
