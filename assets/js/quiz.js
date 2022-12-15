@@ -92,7 +92,7 @@ let questions = [
  * Displays timer countdown to the player
  */
 
-var second = 3;
+var second = 60;
 var timeInterval = setInterval(quizTimer, 1000);
 
 function quizTimer() {
@@ -107,8 +107,9 @@ function quizTimer() {
 }
 
 /** 
- * Start the game by setting the default value to the score counter 
- * and calling the first question 
+ * Start the game by setting the default value to the score counter and progress bar 
+ * and calling the first question along with its answers.
+ * The questions are randomized.
  */
 
 function startGame() {
