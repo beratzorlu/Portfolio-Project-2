@@ -88,9 +88,7 @@ let questions = [
     },
 ]
 
-/**
- * Displays timer countdown to the player
- */
+/*Displays timer countdown to the player*/
 
 var second = 60;
 var timeInterval = setInterval(quizTimer, 1000);
@@ -119,8 +117,16 @@ function startGame() {
     getNewQuestion()
 }
 
+//Randomize question choices
+shuffle = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+} 
+
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('index.html') /* Take player to end game*/
@@ -130,14 +136,28 @@ getNewQuestion = () => {
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
+
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-
-    choices.forEach(choice => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number]
-    })
+    
+    //Locate choices
+    const answerChoices = [
+        currentQuestion.choice1,
+        currentQuestion.choice2,
+        currentQuestion.choice3,
+        currentQuestion.choice4,
+    ];
+    
+    //Call randomize choices function
+    shuffle(answerChoices);
+    
+    //Display randomized choices  
+    choices.forEach((choice, index) => {
+        /*const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number]*/
+        choice.innerHTML = answerChoices[index];
+    });
 
     availableQuestions.splice(questionsIndex, 1);
 
