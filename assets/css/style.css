@@ -10,7 +10,7 @@
   }
 
 :root {
-    --core-font: 'Gideon Roman', cursive;
+    --core-font: 'Gideon Roman', Times, serif;
     --carmine: #8e001cff;
     --purple-navy: #645986ff;
     --honey-yellow: #ffb300ff;
@@ -223,13 +223,21 @@ p {
     text-align: center;
 }
 
+#endScore {
+    color: var(--honey-yellow);
+}
+
+#scoreSaveButton {
+    border: none;
+}
+
 input {
     margin-bottom: 0.8rem;
     width: 20rem;
     padding: 1.3rem;
     font-size: 1.1rem;
-    border: none;
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
+    border: 1px solid var(--purple-navy);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.5);
 }
 
 input::placeholder {
