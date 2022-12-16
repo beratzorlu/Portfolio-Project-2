@@ -229,13 +229,19 @@ p {
 
 #scoreSaveButton {
     border: none;
+    font-family: var(--core-font);
+}
+
+#scoreSaveButton:hover {
+    box-shadow: 0 0.3rem 1.4rem 0 var(--purple-navy);
 }
 
 input {
+    font-family: var(--core-font);
     margin-bottom: 0.8rem;
     width: 20rem;
     padding: 1.3rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border: 0.3rem solid var(--purple-navy);
     box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.3);
 }
