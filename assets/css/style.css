@@ -250,6 +250,18 @@ input::placeholder {
     color: var(--purple-navy);
 }
 
+/* Leaderboard Page */
+
+#savedScoresList {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.high-score {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
