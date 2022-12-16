@@ -211,6 +211,34 @@ p {
     max-width: 30rem;
 }
 
+#username {
+    width: 100%;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+#result-text {
+    color: var(--basic-white);
+    font-size: 2rem;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 0.8rem;
+    width: 20rem;
+    padding: 1.3rem;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
+}
+
+input::placeholder {
+    color: var(--purple-navy);
+}
+
+
+
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
