@@ -127,7 +127,7 @@ shuffle = array => {
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score);
+        localStorage.setItem('recentScore', score);
 
         return window.location.assign('result.html') /* Take player to end game*/
     }
