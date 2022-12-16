@@ -100,7 +100,7 @@ function quizTimer() {
         clearInterval(timeInterval);
         document.getElementById('timer').innerHTML = "0s left";
         alert('Senator, you have run out of time!');
-        return window.location.assign('index.html');
+        return window.location.assign('result.html');
     }
 }
 
@@ -129,7 +129,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('index.html') /* Take player to end game*/
+        return window.location.assign('result.html') /* Take player to end game*/
     }
 
     questionCounter++;
