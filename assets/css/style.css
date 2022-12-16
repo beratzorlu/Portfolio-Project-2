@@ -79,7 +79,7 @@ h2 {
 
 .button {
     display: block;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     text-decoration: none;
     color: var(--carmine);
@@ -115,21 +115,15 @@ h2 {
 
 /* Instructions Page */
 
-table {
-    font-size: 10rem;
-    text-align: left;
-}
-
-/*ul {
-    list-style: none;
-    padding-top: 1rem;
-    font-size: 4rem;
-    justify-content: left;
-}*/
-
 p {
     font-size: 2.2rem;
     text-align: left;
+}
+
+.inner-box {
+    border: 7px double var(--purple-navy);
+    padding: 1rem;
+    margin: 1rem;
 }
 
 /* Quiz Game */
