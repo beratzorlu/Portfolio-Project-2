@@ -236,16 +236,13 @@ input {
     width: 20rem;
     padding: 1.3rem;
     font-size: 1.1rem;
-    border: 1px solid var(--purple-navy);
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.5);
+    border: 0.3rem solid var(--purple-navy);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.3);
 }
 
 input::placeholder {
     color: var(--purple-navy);
 }
-
-
-
 
 /* Media Queries */
 
