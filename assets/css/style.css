@@ -120,11 +120,16 @@ table {
     text-align: left;
 }
 
-ul {
+/*ul {
     list-style: none;
     padding-top: 1rem;
     font-size: 4rem;
     justify-content: left;
+}*/
+
+p {
+    font-size: 2.2rem;
+    text-align: left;
 }
 
 /* Quiz Game */
