@@ -80,18 +80,8 @@ This project aims to achieve the fundamental purpose providing a robust quiz gam
     As a user, I want to be able to track how much time I have left to complete all questions.
     As a user, I want to be able to navigate the game with clearly labelled button.
     As a user, I want to be able to save my final score under my username.
-    As a user, I want to be able to display my saved final score on a leaderboard on demand.
-
-- Objectives
-
-    - Client Objectives:
-
-    - First Time Customer Objectives:
-        
-    - Frequent Visitor Objectives:
-        
-    - Returning Customer Objectives:
-
+    As a user, I want to be able to display my saved final score on a leaderboard on demand..
+   
 ---
 
 
