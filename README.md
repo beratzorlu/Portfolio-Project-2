@@ -66,6 +66,7 @@ While there will be more deliberation on the project design and development proc
 
 ## User Experience (UX)
 
+This project aims to achieve the fundamental purpose providing a robust quiz game experience to players.
 
 
 ### User Stories
