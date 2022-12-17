@@ -84,13 +84,15 @@ This project aims to achieve the fundamental purpose providing a robust quiz gam
    
 ---
 
-
 ## Design Process
 
 ### User Experience Design (UXD)
 
+The five pillars of user experience discussed in Code Institute's curriculum influenced the overall user experience design process. These are namely strategy, scope, structure, skeleton and surface.
+
 - ### Strategy 
 
+    Previous experience in playing history quiz games helped find the appropriate sources for inspiration. Regardless, research in identifying appropriate quiz game examples was essential in understanding the best approach towards developing the project. This process enabled the discovery of three interactive quiz game applications that fit the scope of this project. These were [Brittanica's The Roman Empire Quiz](https://www.britannica.com/quiz/the-roman-empire), [History Extra's Ancient Rome Quiz](https://www.historyextra.com/period/roman/ancient-rome-quiz/) and [Khan Academy's Ancient Rome Quiz](https://www.khanacademy.org/humanities/ancient-art-civilizations/roman/rome-quiz/e/ancient-rome) While these three examples did not have a direct an influence on the specific choice of elements and logic, they informed the project of the overall functionality that an interactive quiz game web application would need to demonstrate.
 
 - ### Scope
 
