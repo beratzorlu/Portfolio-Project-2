@@ -7,8 +7,15 @@
 ---
 
 ## Project Documentation
-### Welcome to []
+### Welcome to [Senatus: The Interactive Quiz Game]()
 
+Senatus is a web development project created as the second portfolio project as a part of Code Institute’s full-stack web development course curriculum. It utilises HTML5, CSS3 and JavaScript ES6 to provide an interactive and responsive front-end quiz game application to the user.
+
+The present documentation will provide information critical to understanding the core design principles that enabled the development of the project. More specifically, details regarding the UX/UI development, application testing and deployment, code structure and maintainability, bug fixes and the planned future features for the project.
+
+To provide conceptual context, Senatus is a history quiz game where the user is presented with questions about ancient Rome. The language used in the UI/UX design carries a narrative where players are referred to as senators, and the Roman Senate is testing their knowledge about the society they represent to gauge their intellectual capacity as roman statesmen.
+
+While there will be more deliberation on the project design and development processes below, the principles of CARE had a significant impact on the creation of this project. Cohesion, accessibility, responsivity and essentiality were key areas that directly impacted the end product.
 ---
 
 ## Table of Contents
