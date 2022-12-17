@@ -86,7 +86,7 @@ let questions = [
         choice4: 'Pergamon and Anatolia',
         answer: 3,
     },
-]
+];
 
 /*Displays timer countdown to the player*/
 
@@ -114,7 +114,7 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions]; /* Spread operator */
-    getNewQuestion()
+    getNewQuestion();
 }
 
 //Randomize question choices
@@ -123,18 +123,18 @@ shuffle = array => {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-} 
+}; 
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('recentScore', score);
 
-        return window.location.assign('result.html') /* Take player to end game*/
+        return window.location.assign('result.html'); /* Take player to end game*/
     }
 
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -162,15 +162,15 @@ getNewQuestion = () => {
     availableQuestions.splice(questionsIndex, 1);
 
     acceptingAnswers = true;
-}
+};
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-       if(!acceptingAnswers) return
+       if(!acceptingAnswers) return;
 
        acceptingAnswers = false;
        const selectedChoice = e.target;
-       const selectedAnswer = selectedChoice.dataset['number'];
+       const selectedAnswer = selectedChoice.dataset.number;
 
        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
@@ -184,15 +184,12 @@ choices.forEach(choice => {
         selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
        }, 1000);
-    })
-})
+    });
+});
 
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
-}
+};
 
-startGame()
-
-
-
+startGame();
