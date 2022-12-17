@@ -11,6 +11,7 @@
 
 :root {
     --core-font: 'Gideon Roman', Times, serif;
+    --alt-font: 'Luxurious Roman', Times, serif;
     --carmine: #8e001cff;
     --purple-navy: #645986ff;
     --honey-yellow: #ffb300ff;
@@ -44,6 +45,13 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+#fun-fact-text {
+    font-size: 1.5rem;
+    padding-top: 5rem;
+    font-style: italic;
+    font-family: var(--alt-font);
 }
 
 /* Welcome Page */
