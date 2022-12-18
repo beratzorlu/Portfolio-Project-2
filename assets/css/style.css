@@ -48,10 +48,11 @@ h2 {
 }
 
 #fun-fact-text {
-    font-size: 1.5rem;
-    padding-top: 5rem;
+    font-size: 1.3rem;
+    padding: 5rem 1rem;
     font-style: italic;
     font-family: var(--alt-font);
+    text-align: center;
 }
 
 /* Welcome Page */
