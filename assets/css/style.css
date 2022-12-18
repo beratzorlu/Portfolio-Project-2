@@ -62,7 +62,12 @@ h2 {
     height: 60vh;
     margin: 0 auto;
     background: var(--carmine);
-    border: 6px solid var(--honey-yellow);
+    border: 6px solid var(--honey-yellow); /* Fallback border styling */
+    border-image-slice: 30 31 28 28;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round;
+    border-image-source: url(../images/key-frame-roman-red.png);
     text-align: center;
     display: flex;
     justify-content: center;
