@@ -109,6 +109,7 @@ The five pillars of user experience discussed in Code Institute's curriculum inf
 
 - ### Surface
 
+    On the surface level, accompanying the design approaches detailed in the skeleton section, users will find the elements of the application centred in the middle of the viewport. This emphasises the application itself and enables users to engage with the content immediately without having to navigate much. Further, there are design elements present in the application that complement the overall thematic structure of the project. For instance, users will find Latin-inspired font styles and a background picture of a Roman museum that provides a sense of space to the user during gameplay.
 
 ---
 
