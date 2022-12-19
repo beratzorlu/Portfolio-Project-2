@@ -30,3 +30,15 @@ saveHighScore = e => {
 
     window.location.assign('leaderboard.html')
 }
+
+function scoreMessage () {
+    if(recentScore >= 50) {
+        document.getElementById('result-message').innerText = 'The Senātus Rōmānus commends your knowledge!';
+    } else if (recentScore < 50) {
+        document.getElementById('result-message').innerText = 'The Senātus Rōmānus firmly believes you can do better.';
+    }
+
+};
+
+scoreMessage();
+
