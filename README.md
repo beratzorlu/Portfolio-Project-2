@@ -97,6 +97,7 @@ The five pillars of user experience discussed in Code Institute's curriculum inf
 
 - ### Scope
 
+    There was a direct relationship between user stories and feature design across the length of the development process of this project. The core objective was to provide a source of entertainment to potential users. It was important to research the industry to find relevant web development projects to understand how to achieve this. Ultimately, the research process helped identify typical features of web quiz games.
 
 - ### Structure
 
