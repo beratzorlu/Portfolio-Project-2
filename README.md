@@ -101,6 +101,7 @@ The five pillars of user experience discussed in Code Institute's curriculum inf
 
 - ### Structure
 
+    The structural design of this web development project mainly followed the design conventions identified during the research process. Nonetheless, the key structural aspect of this project overall was to provide an interactive experience to a user that responds to their input and provides feedback. Features such as hover effects on buttons, red and green light-up to indicate correctness, and unique button styling to highlight different sections of the web application are some examples that illustrate appropriate user interactivity in the context of this project.
 
 - ### Skeleton
 
