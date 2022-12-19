@@ -105,6 +105,7 @@ The five pillars of user experience discussed in Code Institute's curriculum inf
 
 - ### Skeleton
 
+    An emphasis on minimalistic and straightforward design choices that emphasize a fair implementation of form and function constitutes the design approach in this area. The web application will be presents users with concise information supported by button prompts that direct them to the relevant aspects of the quiz game. Users will also find interactive and visual elements that help establish the light story narrative present in the application. This approach to design enables users to acquire and process consequential information key to successfully playing the game. It was important to avoid taking it for granted that users were aware of how to navigate an online quiz game for accessibility. The project also aims to provide education to users where quotes of historical information displayed on certain pages of this project represent this motivation.
 
 - ### Surface
 
