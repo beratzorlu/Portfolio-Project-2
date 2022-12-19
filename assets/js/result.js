@@ -4,6 +4,7 @@ const scoreSaveButton = document.querySelector('#scoreSaveButton');
 const endScore = document.querySelector('#endScore');
 const recentScore = localStorage.getItem('recentScore');
 const savedScores = JSON.parse(localStorage.getItem('savedScores')) || [];
+let resultMessageText = document.getElementById('result-message');
 
 endScore.innerText = recentScore;
 
@@ -33,9 +34,9 @@ saveHighScore = e => {
 
 function scoreMessage () {
     if(recentScore >= 50) {
-        document.getElementById('result-message').innerText = 'The Senātus Rōmānus commends your knowledge!';
+        resultMessageText.innerText = 'The Senātus Rōmānus commends your knowledge!';
     } else if (recentScore < 50) {
-        document.getElementById('result-message').innerText = 'The Senātus Rōmānus firmly believes you can do better.';
+        resultMessageText.innerText = 'The Senātus Rōmānus firmly believes you can do better.';
     }
 
 };
