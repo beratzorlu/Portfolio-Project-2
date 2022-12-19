@@ -73,15 +73,15 @@ This project aims to achieve the fundamental purpose providing a robust quiz gam
 ### User Stories
 
 - User Stories
-    As a user, I want to be able to see the name of the quiz application in the centre of the screen
-    As a user, I want to be able to have agency over toggling the music on or off.
-    As a user, I want to be able to see game instructions before starting the game.
-    As a user, I want to be able to track my score performance while playing the game.
-    As a user, I want to be able to track which question out of the total number of questions I am on.
-    As a user, I want to be able to track how much time I have left to complete all questions.
-    As a user, I want to be able to navigate the game with clearly labelled button.
-    As a user, I want to be able to save my final score under my username.
-    As a user, I want to be able to display my saved final score on a leaderboard on demand..
+   - As a user, I want to be able to see the name of the quiz application in the centre of the screen
+   - As a user, I want to be able to have agency over toggling the music on or off.
+   - As a user, I want to be able to see game instructions before starting the game.
+   - As a user, I want to be able to track my score performance while playing the game.
+   - As a user, I want to be able to track which question out of the total number of questions I am on.
+   - As a user, I want to be able to track how much time I have left to complete all questions.
+   - As a user, I want to be able to navigate the game with clearly labelled buttons.
+   - As a user, I want to be able to save my final score under my username.
+   - As a user, I want to be able to display my saved final score on a leaderboard on demand.
    
 ---
 
