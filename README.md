@@ -313,8 +313,11 @@ Random fun facts about ancient rome displayed in the welcome and leaderboard pag
 ---    
 
 ## Bug Fixes
+- User Input Not Registering Correctly Due To Shuffled Choices
+    - Fixed by targeting a separate key/value pair in the questions object that has the specific string matching the correct answer. You can view the associated push here: [JavaScript Shuffle Choices Bug Fix](https://github.com/beratzorlu/Portfolio-Project-2/commit/beb36d4d01aca35312b28e269c4ec085470d5160)
 
-
+- Previous Game Score Displaying After Time Out On A New Game
+    - Fixed by resetting the score 0 before taking the player to the result page. You can view the associated push here: [JavaScript Score Time Out Fix](https://github.com/beratzorlu/Portfolio-Project-2/commit/beb36d4d01aca35312b28e269c4ec085470d5160)
 ---
 
 ## Deployment
