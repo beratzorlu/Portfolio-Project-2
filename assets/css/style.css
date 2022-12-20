@@ -237,6 +237,12 @@ p {
     text-align: center;
 }
 
+#result-message {
+    font-style: italic;
+    text-align: center;
+    width: 150%;
+}
+
 #endScore {
     color: var(--honey-yellow);
 }
