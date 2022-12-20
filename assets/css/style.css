@@ -290,18 +290,58 @@ input::placeholder {
 
 /* Media Queries */
 
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 20rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .container {
         margin-top: 2rem;
         margin-bottom: 2rem;
-        width: 90vw;
+        width: 94vw;
         height: 100vh;
-
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    #progressBar {
+        height: 2rem;
+        width: 11rem;
+    }
+
+    .hud-prefix {
+        font-size: 1.5rem;
+    }
+
+    #result-message {
+        width: 125%;
+        font-size: 2.5rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    #username {
+        width: 81%;
+    }
+
+    .highScore {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
 }
 
 @media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 20rem;
+    .container {
+        height: 115vh;
     }
 }
