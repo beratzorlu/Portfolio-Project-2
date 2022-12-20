@@ -177,7 +177,10 @@ Wireframes were designed using software named Balsamiq.
 
 [Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was helpful in finding appropriate font families. Below is the list of fonts used to stylize the text content of the project;
 
-
+- Headings: Gideon Roman (Regular 400)
+    ![Gideon Roman](assets/images/gideon-roman.png) 
+- Text: Luxurious Roman (Regular 400) 
+    ![Luxurious Roman](assets/images/luxurious-roman.png)
 
 
 ---
