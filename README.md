@@ -367,6 +367,8 @@ DevTools.
 - Font Awesome: For importing fonts to further decorate text elements.
 - Coolors: For creating a matching colour palette that has appropriate contrast.
 - Diff Checker: For looking for differences between two pieces of code. This helped me identify my mistakes.
+- CSS Gradient: Used for generating custom CSS gradients for stylizing buttons.
+- Rapid Tables: Used for converting Hex values to RGB.
 
 ---
 
