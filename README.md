@@ -384,12 +384,10 @@ DevTools.
     - [Stop timer countdown](https://stackoverflow.com/questions/16869328/stop-countdown-timer-javascript-onclick) (This post is active at the time of writing this documentation.)  
 - [W3Schools](https://www.w3schools.com/): W3S was an excellent resource in understanding and practicing CSS and HTML frameworks
 before implementing them into my project. The code I implemented from them is as follows;
-
     - [Blurred Background](https://www.w3schools.com/howto/howto_css_blurred_background.asp)
     - [CSS background-attachment Property](https://www.w3schools.com/cssref/pr_background-attachment.php)
     - [CSS Button Animation](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3)
     - [CSS Font-family Attribute](https://www.w3schools.com/cssref/pr_font_font-family.php)
-
 - [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-align-text-in-html/): A blog post explaining how to align text in HTML. 
 - [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/): A blog post teaching basic JavaScript quiz game structure.
 - [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js): WebDevSimplified's approach to register correct answers helped inform my approach towards implementing this functionality into my project.
@@ -403,6 +401,7 @@ before implementing them into my project. The code I implemented from them is as
     - [History Colored](https://historycolored.com/articles/6606/11-facts-about-roman-life-you-should-know/)
     - [Eating Europe](https://www.eatingeurope.com/blog/ancient-rome-for-kids/)
 - [Sean Young](https://code-institute-room.slack.com/archives/C027C3PLS1W/p1671125815485319?thread_ts=1671062728.032189&cid=C027C3PLS1W): I would like to thank Sean for introducing me to the Fisher-Yates Shuffle.
+- [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset): Allowed me to understand how to use HTMLElement.dataset while building the answer recognition feature.
 
 --- 
 
