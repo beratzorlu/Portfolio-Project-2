@@ -120,56 +120,62 @@ Wireframes were designed using software named Balsamiq.
 ### Home Page
 
 - Desktop 
-    - ![wireframe-home-desktop]()
+    - ![wireframe-welcome-desktop](assets/images/welcome-desktop.png)
 - Tablet
-    - ![wireframe-home-tablet]()
+    - ![wireframe-welcome-tablet](assets/images/welcome-tablet.png)
 - Phone
-    - ![wireframe-home-phone]()
+    - ![wireframe-welcome-phone](assets/images/welcome-mobile.png)
 
-### Gallery Page
+### Instructions Page
 
 - Desktop 
-    - ![wireframe-gallery-desktop]()
+    - ![wireframe-instructions-desktop](assets/images/instructions-desktop.png)
 - Tablet
-    - ![wireframe-gallery-tablet]()
+    - ![wireframe-instructions-tablet](assets/images/instructions-tablet.png)
 - Phone
-    - ![wireframe-gallery-phone]()
+    - ![wireframe-instructions-phone](assets/images/instructions-mobile.png)
 
-### About Page
+### Quiz Game Page
 
 - Desktop 
-    - ![wireframe-about-desktop]()
+    - ![wireframe-game-desktop](assets/images/game-desktop.png)
 - Tablet
-    - ![wireframe-about-tablet]()
+    - ![wireframe-game-tablet](assets/images/game-tablet.png)
 - Phone
-    - ![wireframe-about-phone]()
+    - ![wireframe-game-phone](assets/images/game-mobile.png)
 
-### Order Page
+### Result Page
 
 - Desktop 
-    - ![wireframe-order-desktop]()
+    - ![wireframe-result-desktop](assets/images/result-desktop.png)
 - Tablet
-    - ![wireframe-order-tablet]()
+    - ![wireframe-result-tablet](assets/images/result-tablet.png)
 - Phone
-    - ![wireframe-order-phone]()
+    - ![wireframe-result-phone](assets/images/result-mobile.png)
 
----
+### Leaderboard Page
+
+- Desktop 
+    - ![wireframe-leaderboard-desktop](assets/images/leaderboard-desktop.png)
+- Tablet
+    - ![wireframe-leaderboard-tablet](assets/images/leaderboard-tablet.png)
+- Phone
+    - ![wireframe-leaderboard-phone](assets/images/leaderboard-mobile.png)
 
 ---
 
 ### Colour Palette
 
 
-[Coolors](https://coolors.co/) was a highly beneficial resource in this regard which provided significant help in identifying
-matching colours that also have appropriate contrast.
+[Coolors](https://coolors.co/) was an essential resource in identifying matching colours that have appropriate contrast.
 
-![Colour Palette]()
+![Colour Palette](assets/images/senatus-colour-palette.png)
 
 ---
 
 ### Typography
 
-[Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was sufficient in finding satisfactory font families. Below is the list of fonts used to stylize the text content of the project;
+[Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was helpful in finding appropriate font families. Below is the list of fonts used to stylize the text content of the project;
 
 
 
