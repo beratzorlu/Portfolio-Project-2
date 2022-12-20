@@ -21,6 +21,7 @@ let questions = [
         choice3: 'Jupiter',
         choice4: 'Mars',
         answer: 4,
+        correctAnswer: 'Mars'
     },
     {
         question: 'Which was the first Roman road?',
@@ -29,6 +30,8 @@ let questions = [
         choice3: 'Via Appia',
         choice4: 'Via Flaminia',
         answer: 3,
+        correctAnswer: 'Via Appia'
+
     },
     {
         question: 'Which of the following did not defeat Mithridates VI of Pontus?',
@@ -37,6 +40,7 @@ let questions = [
         choice3: 'Pompey',
         choice4: 'Sulla',
         answer: 2,
+        correctAnswer: 'Marius'
     },
     {
         question: 'How many times was Rome sacked in antiquity?',
@@ -45,6 +49,7 @@ let questions = [
         choice3: 'Six',
         choice4: 'Twice',
         answer: 2,
+        correctAnswer: 'Three or four'
     },
     {
         question: 'What is an ancient roman marketplace called?',
@@ -53,6 +58,7 @@ let questions = [
         choice3: 'Forum',
         choice4: 'Centre',
         answer: 3,
+        correctAnswer: 'Forum',
     },
     {
         question: 'How many heirs did Augustus lose before his death on 19 August AD 14?',
@@ -61,6 +67,7 @@ let questions = [
         choice3: 'Three',
         choice4: 'Six',
         answer: 1,
+        correctAnswer: 'Five',
     },
     {
         question: 'Which of the following did NOT die in battle in Mesopotamia?',
@@ -68,7 +75,8 @@ let questions = [
         choice2: 'Julius',
         choice3: 'Crassus',
         choice4: 'Valerian',
-        answer: 4,
+        answer: 4, 
+        correctAnswer: 'Valerian'
     },
     {
         question: 'Which of the following emperors did not win a victory against the Goths?',
@@ -77,6 +85,7 @@ let questions = [
         choice3: 'Julian',
         choice4: 'Justinian',
         answer: 3,
+        correctAnswer: 'Julian',
     },
     {
         question: 'Between which forces was the Battle of Cannae fought?',
@@ -84,7 +93,8 @@ let questions = [
         choice2: 'Carthage and Rome',
         choice3: 'Sparta and Arcadia',
         choice4: 'Pergamon and Anatolia',
-        answer: 3,
+        answer: 3, 
+        correctAnswer: 'Sparta and Arcadia',
     },
 ];
 
@@ -100,6 +110,7 @@ function quizTimer() {
         clearInterval(timeInterval);
         document.getElementById('timer').innerHTML = "0s left";
         alert('Senator, you have run out of time!');
+        resetScore();
         return window.location.assign('result.html');
     }
 }
@@ -109,7 +120,6 @@ function quizTimer() {
  * and calling the first question along with its answers.
  * The questions are randomized.
  */
-
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -118,7 +128,7 @@ function startGame() {
 }
 
 //Randomize question choices
-shuffle = array => {
+function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -171,8 +181,7 @@ choices.forEach(choice => {
        acceptingAnswers = false;
        const selectedChoice = e.target;
        const selectedAnswer = selectedChoice.dataset.number;
-
-       let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+       let classToApply = selectedChoice.innerText == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
        if(classToApply === 'correct') {
            incrementScore(SCORE_POINTS);
@@ -192,4 +201,10 @@ incrementScore = num => {
     scoreText.innerText = score;
 };
 
-startGame();
+function resetScore() {
+    score = 0;
+    scoreText.innerText = 0;
+    localStorage.setItem('recentScore', score); //Add text for no time.
+}
+
+startGame(); //DOMContentLoaded: This will prevent intervention to user experience due to bandwith issues.
