@@ -291,8 +291,59 @@ input::placeholder {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 89vw;
+        height: 77vh;
+        margin-top: 7.5rem
+    }
+
+    #hud {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
     .choice-container {
         min-width: 20rem;
+        color: var(--basic-black);;
+        width: 91%;
+        border-radius: 4px;
+        margin-left: 3rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .title {
+        font-size: 3rem;
+    }
+    
+    .inner-box {
+        margin: 2rem;
+    }
+    
+    #progressBar {
+        height: 2rem;
+        width: 11rem;
+    }
+    
+    .hud-prefix {
+        font-size: 1.5rem;
+    }
+
+    #question {
+        padding: 1rem 2rem;
+    }
+
+    #fun-fact-text {
+        padding: 5rem 5rem;
     }
 }
 
@@ -338,10 +389,4 @@ input::placeholder {
         margin-left: 1rem;
         margin-right: 1rem;
       }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        height: 115vh;
-    }
 }
