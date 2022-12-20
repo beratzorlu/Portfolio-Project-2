@@ -353,6 +353,7 @@ This project was deployed utilizing GitHub pages using the following procedure;
 - Balsamiq: Used for wireframing.
 - Windows Snip & Sketch: Capturing screenshots for readme and archiving identified bugs.
 - Microsoft Snipping Tool: Fallback screen capture software when MS Snip & Sketched became unresponsive.
+- Mozilla Border Image Generator: Utilized to generate unique border image file.
 
 ### Platforms
 
@@ -365,12 +366,43 @@ This project was deployed utilizing GitHub pages using the following procedure;
 DevTools.
 - Font Awesome: For importing fonts to further decorate text elements.
 - Coolors: For creating a matching colour palette that has appropriate contrast.
-- Code Beautify: For looking for differences between two pieces of code. This helped me identify my mistakes.
+- Diff Checker: For looking for differences between two pieces of code. This helped me identify my mistakes.
 
 ---
 
 ## Credits and References
 
+- [Code Institute](https://codeinstitute.net/): I would like to thank Code Institute for their support and guidance throughout the development of this project.
+    - The [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/f2db5fd401004fccb43b01a6066a5333/) project was helpful in providing a place to start developig my project.
+- [UCD Professional Academy](https://www.ucd.ie/professionalacademy/): I would like to thank UCD PA for their facilitator and masterclass sessions in partnership with Code Insitute. These have been invaluable in better understanding relevant theory and practice elements.
+- [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=1574s): Brian Design's quiz game tutorial has helped me establish the fundamental aspects of this project. I used this video to code the quiz game, leaderboard and result page features.
+- [Stack Overflow](https://stackoverflow.com/): This project heavily made use of Stack Overflow for troubleshooting problems that occurred throughout the development process. Below is are entries used to supplament this project;
+    - [Js quiz answer recognition issue](https://stackoverflow.com/questions/74815696/js-quiz-correct-answer-recognition-issue/74826945#74826945) (My own post: this post is active at the time of writing this documentation.)
+    - [Adding text to markup](https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-element-in-javascript-via-dom) (This post is active at the time of writing this documentation.)
+    - [Div button resize](https://stackoverflow.com/questions/620476/can-someone-tell-me-why-my-div-buttons-wont-resize) (This post is active at the time of writing this documentation.)
+    - [Quiz timer](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz) (This post is active at the time of writing this documentation.) 
+    - [Stop timer countdown](https://stackoverflow.com/questions/16869328/stop-countdown-timer-javascript-onclick) (This post is active at the time of writing this documentation.)  
+- [W3Schools](https://www.w3schools.com/): W3S was an excellent resource in understanding and practicing CSS and HTML frameworks
+before implementing them into my project. The code I implemented from them is as follows;
+
+    - [Blurred Background](https://www.w3schools.com/howto/howto_css_blurred_background.asp)
+    - [CSS background-attachment Property](https://www.w3schools.com/cssref/pr_background-attachment.php)
+    - [CSS Button Animation](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3)
+    - [CSS Font-family Attribute](https://www.w3schools.com/cssref/pr_font_font-family.php)
+
+- [Geeks For Geeks](https://www.geeksforgeeks.org/how-to-align-text-in-html/): A blog post explaining how to align text in HTML. 
+- [Simple Steps Code](https://simplestepscode.com/javascript-quiz-tutorial/): A blog post teaching basic JavaScript quiz game structure.
+- [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js): WebDevSimplified's approach to register correct answers helped inform my approach towards implementing this functionality into my project.
+- [Kevin Powell](https://www.youtube.com/watch?v=ypstT5UfCsk): Kevin Powell's tutorial on how to implement border images into my website was very valuable in imporving the aesthetic quality of my project.
+- Quiz Questions:
+    - [Britannica](https://www.britannica.com/quiz/the-roman-empire)
+    - [History Extra](https://www.historyextra.com/period/roman/ancient-rome-quiz/)
+    - [Khan Academy](https://www.khanacademy.org/humanities/ancient-art-civilizations/roman/rome-quiz/e/ancient-rome)
+- Fun Facts:
+    - [NatGeo Kids](https://www.natgeokids.com/ie/discover/history/romans/10-facts-about-the-ancient-romans/)
+    - [History Colored](https://historycolored.com/articles/6606/11-facts-about-roman-life-you-should-know/)
+    - [Eating Europe](https://www.eatingeurope.com/blog/ancient-rome-for-kids/)
+- [Sean Young](https://code-institute-room.slack.com/archives/C027C3PLS1W/p1671125815485319?thread_ts=1671062728.032189&cid=C027C3PLS1W): I would like to thank Sean for introducing me to the Fisher-Yates Shuffle.
 
 --- 
 
