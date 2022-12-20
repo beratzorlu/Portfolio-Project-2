@@ -275,6 +275,11 @@ Random fun facts about ancient rome displayed in the welcome and leaderboard pag
 
 ## Future Features
 
+### Background Music
+- Music is one of the initial features that was left out to ensure the completion of the minimum viable product. Adding thematic background music would complement the narrative that the game establishes and help the player feel more immersed in the game's content. However, this feature should be disabled by default and only be enabled if the user chooses to do so for accessibility reasons.
+
+### Score Carryover on Time Out
+- Currently, it is not possible to save their score if they run out of time before the completion of the quiz. While this adds meaningful pressure on the player to think about how to strategise their remaining time, it would be more user-friendly to save their score if the timer reaches 0 before the last question. The game still functions as intended without this feature and the user is asked to try again if they run out of time. Allowing them to save the player's progress instead of resetting their score on time out would be a good addition to implement in the future.
 
 ---
 
