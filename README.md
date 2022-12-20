@@ -182,57 +182,94 @@ Wireframes were designed using software named Balsamiq.
 - Text: Luxurious Roman (Regular 400) 
     ![Luxurious Roman](assets/images/luxurious-roman.png)
 
-
 ---
 
 ### Images
 
+Imagery present in this project has a close connection to an ancient Roman aesthetic. While the total amount of images is limited, the user is consistently presented with a background image that provides a sense of space. This establishes a medium appropriate to the theme of the project for the application to be placed within. Thus, all these aspects combined, imagery plays a subtle but equally critical role for this project in establishing an overall style.
 
+[Pexels](https://www.pexels.com/) and [Pixabay](https://pixabay.com/) were the platforms that this project resourced its image files.
 
 ---
 
 ## Website Features
 
-The design considerations that impacted the envisioned features were mainly structured around conventional website design. While there were more features planned in the initial stages of the project, some were not entertained to the benefit of serving the needs referenced in the [User Stories](#user-stories) section. Thus, it was important to focus on a minimum viable project rather than prioritizing the implementation of further features for the sake of it. This would only bloat the website without adding much value to the user experience overall.
+The design considerations that impacted the envisioned features were mainly structured around conventional quiz game design. While there were more features planned initially, some did not make it to the final product to better serve the user needs referenced in the [User Stories](#user-stories) section. Thus, prioritizing the minimum viable project rather than focusing on the implementation of further features for the sake of it allowed the timely completion of the core components of the project. Adding unnecessary features would only bloat the website without value to the user experience.
 
 ### Shared Elements
 
-The below elements are available to be experienced by the user across the website as a whole.
+The below elements are available to be experienced by the user across the website.
 
-- #### Navigation
+- #### Navigation Buttons
 
-![navigation bar]()
-
-
-- #### Hero Image
+![navigation buttons](assets/images/nav-buttons.png)
 
 
+- #### Background/Hero Image
 
-- #### Footer
+![background image](assets/images/bg-image.png)
 
-![footer]())
+- #### Border Image
+
+![border image](assets/images/border-image.png)
+
+This feature was custom designed to provide unique styling to the borders of the container elements in the markup 
 
 - #### Favicon
 
-![favicon]()
+![favicon](assets/images/favicon.png)
 
 Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that also fit different browsers and devices is an important concern in this area. 
 
 [Canva](https://www.canva.com/) was the service that allowed the design and creation of this element.
 
-### Home
+- #### Fun Facts
 
-![home]()
+![favicon](assets/images/funfact.png)
+
+Random fun facts about ancient rome displayed in the welcome and leaderboard pages.
+
+### Quiz Page
+
+- Progression 
+    - ![Progression](assets/images/progress-bar.png)
+
+- Score
+    - ![Score](assets/images/score.png)
+
+- Timer 
+    - ![Timer](assets/images/timer.png)
+
+- Questions 
+    - ![Questions](assets/images/question.png)
+
+- Choices 
+    - ![Choices](assets/images/choices.png)
+
+- Correct 
+    - ![Correct](assets/images/correct.png)
+
+- Incorrect 
+    - ![Inorrect](assets/images/incorrect.png)
 
 
-### About
+### Instructions Page
 
-![about]()
+![Instructions](assets/images/instructions.png)
  
 
-### 404 Page
+### Result Page
+- Final Score and Alternating Text 
+    - Alternating header text depending on user performance.
+    - ![Final Score & Text](assets/images/final-score1.png)
+    - ![Final Score & Text](assets/images/final-score2.png)
 
-![404]()
+- Score Save and Player ID Registeration
+    - ![Final Score & Text](assets/images/player-reg.png)
+
+### Leaderboard Page
+- Player ID and Saved Score
+    - ![Player ID & Saved Score](assets/images/rankings.png)
 
 ---
 
