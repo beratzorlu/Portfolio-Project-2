@@ -198,7 +198,7 @@ p {
 }
 
 #progressBar {
-    height: 3rem;
+    height: 2.5rem;
     width: 20rem;
     margin-top: 2rem;
     border: 0.2rem solid var(--basic-white);
@@ -289,11 +289,24 @@ input::placeholder {
 
 
 /* Media Queries */
+/*Desktop Resolutions*/
+@media screen and (max-width: 1024px) {
+    #fun-fact-text {
+        padding: 5rem 5rem;
+        margin-bottom: -3rem;
+    }
 
+    .container {
+        margin-top: 17rem;
+        width: 81vw;
+        height: 61vh;
+    }
+}
+/*Tablet Resolutions*/
 @media screen and (max-width: 768px) {
     .container {
         width: 89vw;
-        height: 77vh;
+        height: 81vh;
         margin-top: 7.5rem
     }
 
@@ -344,9 +357,10 @@ input::placeholder {
 
     #fun-fact-text {
         padding: 5rem 5rem;
+        margin-bottom: -5rem;
     }
 }
-
+/*Phone Resolutions*/
 @media screen and (max-width: 450px) {
     .container {
         margin-top: 2rem;
