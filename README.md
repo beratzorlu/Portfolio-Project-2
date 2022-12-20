@@ -322,6 +322,14 @@ Random fun facts about ancient rome displayed in the welcome and leaderboard pag
 
 ## Deployment
 
+This project was deployed utilizing GitHub pages using the following procedure;
+
+1. After creating a repository for the project, select the settings tab indicated by a :gear: icon.
+2. Navigate to the "Code and Automation" section on the left side of the page and click on the "Pages" link.
+3. Having done this, select "Main" and then the "root" folder from the drop-down branch menu.
+4. Hit "save" to ensure that your changes are recognised by the service.
+5. Finally, if previous steps were followed correctly GitHub will create a page and present a URL to the deployed website.
+
 ---
 
 ## Technologies Used
