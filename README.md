@@ -167,7 +167,7 @@ Wireframes were designed using software named Balsamiq.
 ### Colour Palette
 
 
-[Coolors](https://coolors.co/) was an essential resource in identifying matching colours that have appropriate contrast.
+[Coolors](https://coolors.co/) was an essential resource in identifying matching colours that have appropriate contrast. More importantly, this colour combination consists of items that were historically utilized by the ancient Roman empire. For instance, purple was used to represent nobility and gold and carmine represented courage and wealth.
 
 ![Colour Palette](assets/images/senatus-colour-palette.png)
 
@@ -175,7 +175,7 @@ Wireframes were designed using software named Balsamiq.
 
 ### Typography
 
-[Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was helpful in finding appropriate font families. Below is the list of fonts used to stylize the text content of the project;
+[Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was helpful in finding appropriate font families. Below is the list of fonts used to stylize the text in keeping with the overall theme of ancient Rome;
 
 - Headings: Gideon Roman (Regular 400)
     ![Gideon Roman](assets/images/gideon-roman.png) 
@@ -342,7 +342,10 @@ This project was deployed utilizing GitHub pages using the following procedure;
 - Samsung Galaxy A51
 
 ### Software
-
+- HTML5: For markup.
+- CSS3: For styling.
+- JavaScript ES6: For logic.
+- Root Variables: Utilised for quick access to various fonts and colours.
 - Mozilla Firefox: Main browser used for development, testing and device simulation.
 - Google Chrome: Secondary browser for testing and device simulation.
 - Microsoft Edge: Tertiary browser for testing.
@@ -355,6 +358,7 @@ This project was deployed utilizing GitHub pages using the following procedure;
 - Microsoft Snipping Tool: Fallback screen capture software when MS Snip & Sketched became unresponsive.
 - Mozilla Border Image Generator: Utilized to generate unique border image file.
 
+
 ### Platforms
 
 - GitHub: Version control and site deployment.
@@ -362,8 +366,7 @@ This project was deployed utilizing GitHub pages using the following procedure;
 - Pexels: Primary source for high-quality royalty-free images.
 - Pixabay: Secondary source for high-quality royalty-free images.
 - Google Fonts: Finding and exporting third-party fonts for the website.
-- CodePen: For quickly testing out ideas before carrying them to 
-DevTools.
+- CodePen: For quickly testing out ideas before carrying them to DevTools.
 - Font Awesome: For importing fonts to further decorate text elements.
 - Coolors: For creating a matching colour palette that has appropriate contrast.
 - Diff Checker: For looking for differences between two pieces of code. This helped me identify my mistakes.
