@@ -315,13 +315,18 @@ The deployed website was tested on multiple browser applications to test cross-c
 
 | Browser | Image |
 | ------- | ----- |
-| Chrome | ![Chrome Browser Test]() |
-| Firefox | ![Firefox Browser Test]() |
-| Edge | ![Edge Browser Test]() |
-
+| Firefox | ![Firefox Browser Index](assets/images/bt-ff-index.png) ![Firefox Browser Instructions](assets/images/bt-ff-inst.png) ![Firefox Browser Quiz](assets/images/bt-ff-quiz.png) ![Firefox Browser Result](assets/images/bt-ff-result.png) ![Firefox Browser Leaderboard](assets/images/bt-ff-leader.png) |
+| Chrome | ![Chrome Browser Index](assets/images/bt-c-index.png) ![Chrome Browser Instructions](assets/images/bt-c-inst.png) ![Chrome Browser Quiz](assets/images/bt-c-quiz.png) ![Chrome Browser Result](assets/images/bt-c-result.png) ![Chrome Browser Leaderboard](assets/images/bt-c-leader.png) |
+| Edge | ![Edge Browser Index](assets/images/bt-e-index.png) ![Edge Browser Instructions](assets/images/bt-e-inst.png) ![Edge Browser Quiz](assets/images/bt-e-quiz.png) ![Edge Browser Result](assets/images/bt-e-result.png) ![Edge Browser Leaderboard](assets/images/bt-e-leader.png) |
 
 - ### Device Testing
 
+| Device | Image(s) |
+| ------ | -------- |
+| Monster Abra Laptop | ![Laptop1](assets/images/bg-image.png) |
+| Iphone 7 Plus Smartphone | ![Samsung-A]() ![Samsung-B]() ![Samsung-C]() |
+| Samsung Galaxy A51 |![IPhone-A]() ![Iphone-B]() ![IPhone-C]()|
+| Lenovo IdeaPad Laptop | ![Laptop2]() |
 
 ## Validation
 

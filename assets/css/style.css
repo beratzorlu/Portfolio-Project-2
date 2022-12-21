@@ -72,7 +72,7 @@ footer {
 /* Welcome Page */
 .container {
     width: 70vw;
-    height: 78vh;
+    height: 100vh;
     margin: 0 auto;
     background: var(--carmine);
     border: 6px solid var(--honey-yellow);
@@ -312,6 +312,12 @@ input::placeholder {
         height: 61vh;
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .container {
+        height: 100vh;
+    }
+} 
 
 /*Tablet Resolutions*/
 @media screen and (max-width: 768px) {
