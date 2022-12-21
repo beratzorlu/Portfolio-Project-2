@@ -297,18 +297,87 @@ Random fun facts about ancient rome displayed in the welcome and leaderboard pag
 
 ### HTML
 
+- Index Page 
+    - No issues found.
+    ![Index Page](assets/images/html-index-check.png)
+
+
+- Instructions Page
+    - No issues found.
+    ![Instructions Page](assets/images/html-instructions-check.png)
+
+- Quiz Page 
+    - No issues found. 
+    ![Quiz Page](assets/images/html-quiz-check.png)
+
+- Result Page
+    - No issues found. 
+    ![Result Page](assets/images/html-result-check.png)
+
+- Leaderboard Page
+    - Identified 2 issues, made the appropriate changes in the html file.
+    ![Leaderboard Page Error](assets/images/html-leaderboard-error.png) 
+    ![Leaderboard Page Fix](assets/images/html-leaderboard-check.png)
 
 ### CSS
 
+- CSS
+    - Identified 1 error, made the appropriate change to fix the syntax issue.
+    ![CSS Error](assets/images/css-error.png)
+    ![CSS Fix](assets/images/css-fix.png)
 
 ### Lighthouse
 
+The website has scored well overall with an average of 95-100 points across all the lighthouse criterias.
 
+- Index Page
+
+![Lighthouse Index](assets/images/lighthouse-index.png)
+
+- Instructions Page
+
+![Lighthouse Instructions](assets/images/lighthouse-instructions.png)
+
+- Quiz Page
+
+![Lighthouse Quiz](assets/images/lighthouse-quiz.png)
+
+- Result Page
+
+![Lighthouse Result](assets/images/lighthouse-quiz.png)
+
+- Leaderboard Page
+
+![Lighthouse Leaderboard](assets/images/lighthouse-leaderboard.png)
 
 ### Accessibility
 
+The website performed well in regards to accessibility with only one detected error overall.
+
+- Index Page
+
+    ![Wave Index](assets/images/wave-index.png)
+
+- Instructions Page
+
+    ![Wave Instructions](assets/images/wave-ins.png)
+
+- Quiz Page
+
+    ![Wave Quiz](assets/images/wave-quiz.png)
+
+- Result Page
+    - The detected error regards the lack of a label for the associated form area. As there is a header element and a placeholder attribute in the form providing a prompt for the user the enter their name, this error was allowed to remain.  
+    ![Wave Result](assets/images/wave-result.png)
+
+- Leaderboard Page
+
+    ![Wave Leaderboard](assets/images/wave-leader.png)
 
 ### Mobile Compatibility
+
+- You can access the report of this test [here.](https://search.google.com/test/mobile-friendly/result?id=nVefxmIh-IEThab-JGeggQ)
+![Mobile Friendly Text](assets/images/mobile-friendly-check.png)
 
 ---    
 
