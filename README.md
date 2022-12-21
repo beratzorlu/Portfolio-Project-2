@@ -324,9 +324,9 @@ The deployed website was tested on multiple browser applications to test cross-c
 | Device | Image(s) |
 | ------ | -------- |
 | Monster Abra Laptop | ![Laptop1](assets/images/bg-image.png) |
-| Iphone 7 Plus Smartphone | ![Samsung-A]() ![Samsung-B]() ![Samsung-C]() |
-| Samsung Galaxy A51 |![IPhone-A]() ![Iphone-B]() ![IPhone-C]()|
-| Lenovo IdeaPad Laptop | ![Laptop2]() |
+| Iphone 7 Plus Smartphone | ![Samsung-A](assets/images/samsung-index.jpg) ![Samsung-B](assets/images/samsung-inst.jpg) ![Samsung-C](assets/images/samsung-quiz.jpg) ![Samsung-D](assets/images/samsung-result.jpg) ![Samsung-D](assets/images/samsung-leader.jpg) |
+| Samsung Galaxy A51 |![IPhone-A](assets/images/samsung-index.jpg) ![Iphone-B](assets/images/samsung-inst.jpg) ![IPhone-C](assets/images/samsung-quiz.jpg) [IPhone-D](assets/images/samsung-result.jpg)  [IPhone-D](assets/images/samsung-leader.jpg) |
+| Lenovo IdeaPad Laptop | ![Laptop2](assets/images/lenovo-index.png) |
 
 ## Validation
 
