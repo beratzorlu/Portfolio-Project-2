@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Luxurious+Roman&display=swap');
 
-/* Global Settings */ 
-
+/* Global Settings */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-  }
+}
 
 :root {
     --core-font: 'Gideon Roman', Times, serif;
@@ -56,13 +55,12 @@ h2 {
 }
 
 /* Welcome Page */
-
 .container {
     width: 70vw;
     height: 60vh;
     margin: 0 auto;
     background: var(--carmine);
-    border: 6px solid var(--honey-yellow); /* Fallback border styling */
+    border: 6px solid var(--honey-yellow);
     border-image-slice: 30 31 28 28;
     border-image-width: 20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -97,7 +95,7 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: var(--carmine);
-    background: linear-gradient(90deg, rgba(255,179,0,1) 0%, rgb(255,179,0) 100%);
+    background: linear-gradient(90deg, rgba(255, 179, 0, 1) 0%, rgb(255, 179, 0) 100%);
     width: 20rem;
     padding: 1rem 1rem;
     margin: 1rem;
@@ -106,7 +104,7 @@ h2 {
 }
 
 .button:hover {
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(255, 179, 0, 1);
     transition-duration: 100ms;
     transition-timing-function: ease-in-out;
     transform: scale(1.1);
@@ -120,15 +118,14 @@ h2 {
 }
 
 #leaderboard-button {
-    background: linear-gradient(90deg, rgb(249, 249, 249)0%, rgb(255,179,0) 100%);
+    background: linear-gradient(90deg, rgb(249, 249, 249)0%, rgb(255, 179, 0) 100%);
 }
 
 #leaderboard-button:hover {
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.9);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(249, 249, 249, 0.9);
 }
 
 /* Instructions Page */
-
 p {
     font-size: 2.2rem;
     text-align: left;
@@ -141,7 +138,6 @@ p {
 }
 
 /* Quiz Game */
-
 #question {
     font-size: 2rem;
 }
@@ -158,7 +154,7 @@ p {
 }
 
 .choice-container:hover {
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(255,179,0,1);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(255, 179, 0, 1);
     cursor: pointer;
     transition-duration: 90ms;
     transition-timing-function: ease-in-out;
@@ -216,7 +212,6 @@ p {
 }
 
 /* Result Page */
-
 .result-form-container {
     display: flex;
     width: 100%;
@@ -263,7 +258,7 @@ input {
     padding: 1.3rem;
     font-size: 1.3rem;
     border: 0.3rem solid var(--purple-navy);
-    box-shadow: 0 0.3rem 1.4rem 0 rgba(249,249,249,0.3);
+    box-shadow: 0 0.3rem 1.4rem 0 rgba(249, 249, 249, 0.3);
 }
 
 input::placeholder {
@@ -271,7 +266,6 @@ input::placeholder {
 }
 
 /* Leaderboard Page */
-
 #savedScoresList {
     margin-bottom: 2rem;
     list-style: none;
@@ -302,6 +296,7 @@ input::placeholder {
         height: 61vh;
     }
 }
+
 /*Tablet Resolutions*/
 @media screen and (max-width: 768px) {
     .container {
@@ -314,39 +309,40 @@ input::placeholder {
         margin-left: 3rem;
         margin-right: 3rem;
     }
-    
+
     .choice-container {
         min-width: 20rem;
-        color: var(--basic-black);;
+        color: var(--basic-black);
+        ;
         width: 91%;
         border-radius: 4px;
         margin-left: 1.5rem;
     }
-    
+
     h1 {
         font-size: 3rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     h2 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    
+
     .title {
         font-size: 3rem;
     }
-    
+
     .inner-box {
         margin: 2rem;
     }
-    
+
     #progressBar {
         height: 2rem;
         width: 11rem;
     }
-    
+
     .hud-prefix {
         font-size: 1.5rem;
     }
@@ -360,6 +356,7 @@ input::placeholder {
         margin-bottom: -5rem;
     }
 }
+
 /*Phone Resolutions*/
 @media screen and (max-width: 450px) {
     .container {
@@ -402,7 +399,7 @@ input::placeholder {
     .highScore {
         margin-left: 1rem;
         margin-right: 1rem;
-      }
+    }
 }
 
 @media screen and (max-width: 320px) {
