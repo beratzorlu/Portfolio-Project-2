@@ -1,13 +1,13 @@
 # Senatus – Portfolio Project 2
 
-![Website mockup covering a range of devices]()
+![Website mockup covering a range of devices](assets/images/responsive.png)
 
-## [Link to live web application]()
+## [Link to live web application](https://beratzorlu.github.io/Portfolio-Project-2/)
 
 ---
 
 ## Project Documentation
-### Welcome to [Senatus: The Interactive Quiz Game]()
+### Welcome to [Senatus: The Interactive Ancient Roman Quiz Game](https://beratzorlu.github.io/Portfolio-Project-2/)
 
 Senatus is a web development project created as the second portfolio project as a part of Code Institute’s full-stack web development course curriculum. It utilises HTML5, CSS3 and JavaScript ES6 to provide an interactive and responsive front-end quiz game application to the user.
 
