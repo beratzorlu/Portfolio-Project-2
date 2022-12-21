@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 let facts = ["Rome was founded in 753BC by its first king, Romulus.",
     "Did you know Roman legend says that Romulus had a twin brother called Remus?",
     "The Romans didn't spend all their time fighting, they were amazing architects and engineers too!",
@@ -30,24 +31,34 @@ let facts = ["Rome was founded in 753BC by its first king, Romulus.",
 
 const funFactsText = document.getElementById('fun-fact-text');
 
-//Fisher-Yates Shuffle
+/*
+*Fisher-Yates Shuffle
+*/
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-};
-
-//Shuffle facts array
-shuffle(facts);
-
-//Target last string from the randomised array
-let selectFact = facts.pop();
-
-//Insert string from shuffled array into markup
-function displayFact() {
-    funFactsText.innerText = `Fun Fact: ${selectFact}`
 }
 
-//Repeat
+/*
+*Shuffle facts array
+*/
+shuffle(facts);
+
+/*
+*Target last string from the randomised array
+*/
+let selectFact = facts.pop();
+
+/*
+*Insert string from shuffled array into markup
+*/
+function displayFact() {
+    funFactsText.innerText = `Fun Fact: ${selectFact}`;
+}
+
+/*
+*Repeat
+*/
 displayFact();

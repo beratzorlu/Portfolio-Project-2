@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -20,7 +21,6 @@ let questions = [
         choice2: 'King Numitor',
         choice3: 'Jupiter',
         choice4: 'Mars',
-        answer: 4,
         correctAnswer: 'Mars'
     },
     {
@@ -29,7 +29,6 @@ let questions = [
         choice2: 'Via Valeria',
         choice3: 'Via Appia',
         choice4: 'Via Flaminia',
-        answer: 3,
         correctAnswer: 'Via Appia'
 
     },
@@ -39,7 +38,6 @@ let questions = [
         choice2: 'Marius',
         choice3: 'Pompey',
         choice4: 'Sulla',
-        answer: 2,
         correctAnswer: 'Marius'
     },
     {
@@ -48,7 +46,6 @@ let questions = [
         choice2: 'Three or four',
         choice3: 'Six',
         choice4: 'Twice',
-        answer: 2,
         correctAnswer: 'Three or four'
     },
     {
@@ -57,7 +54,6 @@ let questions = [
         choice2: 'Market',
         choice3: 'Forum',
         choice4: 'Centre',
-        answer: 3,
         correctAnswer: 'Forum',
     },
     {
@@ -66,7 +62,6 @@ let questions = [
         choice2: 'Four',
         choice3: 'Three',
         choice4: 'Six',
-        answer: 1,
         correctAnswer: 'Five',
     },
     {
@@ -74,8 +69,7 @@ let questions = [
         choice1: 'Gordian III',
         choice2: 'Julius',
         choice3: 'Crassus',
-        choice4: 'Valerian',
-        answer: 4, 
+        choice4: 'Valerian', 
         correctAnswer: 'Valerian'
     },
     {
@@ -84,7 +78,6 @@ let questions = [
         choice2: 'Valens',
         choice3: 'Julian',
         choice4: 'Justinian',
-        answer: 3,
         correctAnswer: 'Julian',
     },
     {
@@ -92,14 +85,15 @@ let questions = [
         choice1: 'Epirus and Macedon',
         choice2: 'Carthage and Rome',
         choice3: 'Sparta and Arcadia',
-        choice4: 'Pergamon and Anatolia',
-        answer: 3, 
+        choice4: 'Pergamon and Anatolia', 
         correctAnswer: 'Sparta and Arcadia',
     },
 ];
 
-/*Displays timer countdown to the player*/
-
+/*
+*Display timer countdown to the player.
+*Reset score on time out to the result page.
+*/
 var second = 60;
 var timeInterval = setInterval(quizTimer, 1000);
 
@@ -133,8 +127,14 @@ function shuffle(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-}; 
+} 
 
+/*
+*Get new question from questions array and display in the front end.
+*Increment question counter and progress bar values.
+*Shuffle answer choices.
+*Display the randomized choices in the front end.
+*/
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('recentScore', score);
@@ -150,8 +150,7 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-    
-    //Locate choices
+   
     const answerChoices = [
         currentQuestion.choice1,
         currentQuestion.choice2,
@@ -159,13 +158,9 @@ getNewQuestion = () => {
         currentQuestion.choice4,
     ];
     
-    //Call randomize choices function
     shuffle(answerChoices);
-    
-    //Display randomized choices  
+     
     choices.forEach((choice, index) => {
-        /*const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number]*/
         choice.innerHTML = answerChoices[index];
     });
 
@@ -174,6 +169,12 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+/*
+*Detect user click
+*Compare user's selected choice with the correct answer value.
+*Light up green or yellow depending on correctness and if correct, increment score value.
+*Remove the light up effect.
+*/
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
        if(!acceptingAnswers) return;
@@ -196,11 +197,19 @@ choices.forEach(choice => {
     });
 });
 
+/*
+*Increase score value.
+*Display the new value in the front end.
+*/
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
 
+/*
+*Reset displayed score value to 0.
+*Reset score value to 0 in the local storage.
+*/
 function resetScore() {
     score = 0;
     scoreText.innerText = 0;

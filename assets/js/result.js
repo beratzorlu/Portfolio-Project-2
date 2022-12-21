@@ -1,3 +1,4 @@
+/* jshint escersion: 11 */
 const HIGH_SCORE_LIMIT = 4;
 const userName = document.querySelector('#username');
 const scoreSaveButton = document.querySelector('#scoreSaveButton');
@@ -6,12 +7,21 @@ const recentScore = localStorage.getItem('recentScore');
 const savedScores = JSON.parse(localStorage.getItem('savedScores')) || [];
 let resultMessageText = document.getElementById('result-message');
 
+/*
+ *Replace placeholder with recent score. 
+ */
 endScore.innerText = recentScore;
 
+/*
+ *Enable register button on user input.
+ */
 userName.addEventListener('keyup', () => {
     scoreSaveButton.disabled = !userName.value;
 });
 
+/*
+ *Save user ID and end score in local storage and display in the front end.
+ */
 saveHighScore = e => {
     e.preventDefault()
 
@@ -32,6 +42,9 @@ saveHighScore = e => {
     window.location.assign('leaderboard.html')
 }
 
+/*
+ *Display alternative text depending on user performance. 
+ */
 function scoreMessage () {
     if(recentScore >= 50) {
         resultMessageText.innerText = 'The Senātus Rōmānus commends your knowledge!';
@@ -41,5 +54,8 @@ function scoreMessage () {
 
 };
 
+/*
+ *Call the alternative text functionality.
+ */
 scoreMessage();
 
