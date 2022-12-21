@@ -1,4 +1,4 @@
-/* jshint escersion: 11 */
+/* jshint esversion: 11 */
 const HIGH_SCORE_LIMIT = 4;
 const userName = document.querySelector('#username');
 const scoreSaveButton = document.querySelector('#scoreSaveButton');
@@ -27,24 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
      *Save user ID and end score in local storage and display in the front end.
      */
     saveHighScore = e => {
-        e.preventDefault()
+        e.preventDefault();
 
         const score = {
             score: recentScore,
             name: userName.value,
-        }
+        };
 
         savedScores.push(score);
         savedScores.sort((a, b) => {
             return b.score - a.score;
-        })
+        });
 
         savedScores.splice(4);
 
         localStorage.setItem('savedScores', JSON.stringify(savedScores));
 
-        window.location.assign('leaderboard.html')
-    }
+        window.location.assign('leaderboard.html');
+    };
 
     /*
      *Display alternative text depending on user performance. 
@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
             resultMessageText.innerText = 'The Senātus Rōmānus firmly believes you can do better.';
         }
 
-    };
+    }
 
     /*
      *Call the alternative text functionality.
      */
     scoreMessage();
-})
+});

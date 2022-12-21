@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function () {
         return `<li class="highScore"><span class="user-listing">${score.name}</span> 
     earned <span class="user-listing">${score.score}</span> points</li>`;
     }).join('');
-})
+});
