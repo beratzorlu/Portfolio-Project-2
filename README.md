@@ -220,7 +220,7 @@ The below elements are available to be experienced by the user across the websit
 
     ![favicon](assets/images/favicon.png)
 
-    Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that also fit different browsers and devices is an important concern in this area. 
+    Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that fit different browsers and devices was an important concern in this area. 
 
     [Canva](https://www.canva.com/) was the service that allowed the design and creation of this element.
 
@@ -516,6 +516,7 @@ before implementing them into my project. The code I implemented from them is as
 
 ## Closing Remarks
 
+In closing, this project has proven to be a challenge to my knowledge and confidence regarding my coding aptitude so far. While the development process overall appeared to be daunting at first, the tasks associated with the coding of this quiz game became incrementally less troublesome the more I learned how to build one. Further, it is imperative for one to make appropriate plans in advance and move feature-by-feature towards the completion of their project. Otherwise, empirical evidence gathered from my experience demonstrates that a disoriented approach towards creating similar projects only amounts to stress and panic. Thus, my most significant learning point from this project is that, while learning JavaScript has been a difficult but equally rewarding experience, constant testing and feedback are invaluable towards ensuring the sustainable creation of a software development project.
 
 ---
  [Back to Top](#project-documentation)
