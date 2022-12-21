@@ -13,9 +13,10 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-/* Object containing the questions of the quiz game. */
-let questions = [
-    {
+/* 
+ *Object containing the questions of the quiz game.
+ */
+let questions = [{
         question: 'According to Roman mythology, who was the father of Romulus and Remus?',
         choice1: 'A wolf',
         choice2: 'King Numitor',
@@ -69,7 +70,7 @@ let questions = [
         choice1: 'Gordian III',
         choice2: 'Julius',
         choice3: 'Crassus',
-        choice4: 'Valerian', 
+        choice4: 'Valerian',
         correctAnswer: 'Valerian'
     },
     {
@@ -85,135 +86,141 @@ let questions = [
         choice1: 'Epirus and Macedon',
         choice2: 'Carthage and Rome',
         choice3: 'Sparta and Arcadia',
-        choice4: 'Pergamon and Anatolia', 
+        choice4: 'Pergamon and Anatolia',
         correctAnswer: 'Sparta and Arcadia',
     },
 ];
 
 /*
-*Display timer countdown to the player.
-*Reset score on time out to the result page.
-*/
-var second = 60;
-var timeInterval = setInterval(quizTimer, 1000);
-
-function quizTimer() {
-    document.getElementById('timer').innerHTML = second + "s left";
-    second--;
-    if (second === -2) {
-        clearInterval(timeInterval);
-        document.getElementById('timer').innerHTML = "0s left";
-        alert('Senator, you have run out of time!');
-        resetScore();
-        return window.location.assign('result.html');
-    }
-}
-
-/** 
- * Start the game by setting the default value to the score counter and progress bar 
- * and calling the first question along with its answers.
- * The questions are randomized.
+ *Ensure content is parsed after the DOM has been loaded."
  */
-function startGame() {
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions]; /* Spread operator */
-    getNewQuestion();
-}
+document.addEventListener("DOMContentLoaded", function () {
+    /*
+     *Display timer countdown to the player.
+     *Reset score on time out to the result page.
+     */
+    var second = 60;
+    var timeInterval = setInterval(quizTimer, 1000);
 
-//Randomize question choices
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-} 
-
-/*
-*Get new question from questions array and display in the front end.
-*Increment question counter and progress bar values.
-*Shuffle answer choices.
-*Display the randomized choices in the front end.
-*/
-getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        localStorage.setItem('recentScore', score);
-
-        return window.location.assign('result.html'); /* Take player to end game*/
+    function quizTimer() {
+        document.getElementById('timer').innerHTML = second + "s left";
+        second--;
+        if (second === -2) {
+            clearInterval(timeInterval);
+            document.getElementById('timer').innerHTML = "0s left";
+            alert('Senator, you have run out of time!');
+            resetScore();
+            return window.location.assign('result.html');
+        }
     }
 
-    questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
-
-
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question;
-   
-    const answerChoices = [
-        currentQuestion.choice1,
-        currentQuestion.choice2,
-        currentQuestion.choice3,
-        currentQuestion.choice4,
-    ];
-    
-    shuffle(answerChoices);
-     
-    choices.forEach((choice, index) => {
-        choice.innerHTML = answerChoices[index];
-    });
-
-    availableQuestions.splice(questionsIndex, 1);
-
-    acceptingAnswers = true;
-};
-
-/*
-*Detect user click
-*Compare user's selected choice with the correct answer value.
-*Light up green or yellow depending on correctness and if correct, increment score value.
-*Remove the light up effect.
-*/
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-       if(!acceptingAnswers) return;
-
-       acceptingAnswers = false;
-       const selectedChoice = e.target;
-       const selectedAnswer = selectedChoice.dataset.number;
-       let classToApply = selectedChoice.innerText == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
-
-       if(classToApply === 'correct') {
-           incrementScore(SCORE_POINTS);
-       }
-
-       selectedChoice.parentElement.classList.add(classToApply);
-
-       setTimeout(() => {
-        selectedChoice.parentElement.classList.remove(classToApply);
+    /** 
+     * Start the game by setting the default value to the score counter and progress bar 
+     * and calling the first question along with its answers.
+     * The questions are randomized.
+     */
+    function startGame() {
+        questionCounter = 0;
+        score = 0;
+        availableQuestions = [...questions]; /* Spread operator */
         getNewQuestion();
-       }, 1000);
+    }
+
+    //Randomize question choices
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    /*
+     *Get new question from questions array and display in the front end.
+     *Increment question counter and progress bar values.
+     *Shuffle answer choices.
+     *Display the randomized choices in the front end.
+     */
+    getNewQuestion = () => {
+        if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+            localStorage.setItem('recentScore', score);
+
+            return window.location.assign('result.html'); /* Take player to end game*/
+        }
+
+        questionCounter++;
+        progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+        progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+
+
+        const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+        currentQuestion = availableQuestions[questionsIndex];
+        question.innerText = currentQuestion.question;
+
+        const answerChoices = [
+            currentQuestion.choice1,
+            currentQuestion.choice2,
+            currentQuestion.choice3,
+            currentQuestion.choice4,
+        ];
+
+        shuffle(answerChoices);
+
+        choices.forEach((choice, index) => {
+            choice.innerHTML = answerChoices[index];
+        });
+
+        availableQuestions.splice(questionsIndex, 1);
+
+        acceptingAnswers = true;
+    };
+
+    /*
+     *Detect user click
+     *Compare user's selected choice with the correct answer value.
+     *Light up green or yellow depending on correctness and if correct, increment score value.
+     *Remove the light up effect.
+     */
+    choices.forEach(choice => {
+        choice.addEventListener('click', e => {
+            if (!acceptingAnswers) return;
+
+            acceptingAnswers = false;
+            const selectedChoice = e.target;
+            const selectedAnswer = selectedChoice.dataset.number;
+            let classToApply = selectedChoice.innerText == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
+
+            if (classToApply === 'correct') {
+                incrementScore(SCORE_POINTS);
+            }
+
+            selectedChoice.parentElement.classList.add(classToApply);
+
+            setTimeout(() => {
+                selectedChoice.parentElement.classList.remove(classToApply);
+                getNewQuestion();
+            }, 1000);
+        });
     });
-});
 
-/*
-*Increase score value.
-*Display the new value in the front end.
-*/
-incrementScore = num => {
-    score += num;
-    scoreText.innerText = score;
-};
+    /*
+     *Increase score value.
+     *Display the new value in the front end.
+     */
+    incrementScore = num => {
+        score += num;
+        scoreText.innerText = score;
+    };
 
-/*
-*Reset displayed score value to 0.
-*Reset score value to 0 in the local storage.
-*/
-function resetScore() {
-    score = 0;
-    scoreText.innerText = 0;
-    localStorage.setItem('recentScore', score); //Add text for no time.
-}
+    /*
+     *Reset displayed score value to 0.
+     *Reset score value to 0 in the local storage.
+     */
+    function resetScore() {
+        score = 0;
+        scoreText.innerText = 0;
+        localStorage.setItem('recentScore', score); //Add text for no time.
+    }
 
-startGame(); //DOMContentLoaded: This will prevent intervention to user experience due to bandwith issues.
+    startGame();
+
+})

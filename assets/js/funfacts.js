@@ -29,36 +29,42 @@ let facts = ["Rome was founded in 753BC by its first king, Romulus.",
     "Did you know that Roman bridges still stand and are in use today?"
 ];
 
-const funFactsText = document.getElementById('fun-fact-text');
-
 /*
-*Fisher-Yates Shuffle
-*/
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+ *Ensure content is parsed after the DOM has been loaded."
+ */
+document.addEventListener("DOMContentLoaded", function () {
+
+    const funFactsText = document.getElementById('fun-fact-text');
+
+    /*
+     *Fisher-Yates Shuffle
+     */
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
     }
-}
 
-/*
-*Shuffle facts array
-*/
-shuffle(facts);
+    /*
+     *Shuffle facts array
+     */
+    shuffle(facts);
 
-/*
-*Target last string from the randomised array
-*/
-let selectFact = facts.pop();
+    /*
+     *Target last string from the randomised array
+     */
+    let selectFact = facts.pop();
 
-/*
-*Insert string from shuffled array into markup
-*/
-function displayFact() {
-    funFactsText.innerText = `Fun Fact: ${selectFact}`;
-}
+    /*
+     *Insert string from shuffled array into markup
+     */
+    function displayFact() {
+        funFactsText.innerText = `Fun Fact: ${selectFact}`;
+    }
 
-/*
-*Repeat
-*/
-displayFact();
+    /*
+     *Repeat
+     */
+    displayFact();
+})
