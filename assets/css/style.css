@@ -54,6 +54,21 @@ h2 {
     text-align: center;
 }
 
+footer {
+    background-color: var(--carmine);
+}
+
+#personal-link {
+    text-decoration: none;
+    color: var(--honey-yellow);
+    font-size: 1rem;
+}
+
+#personal-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
 /* Welcome Page */
 .container {
     width: 70vw;
