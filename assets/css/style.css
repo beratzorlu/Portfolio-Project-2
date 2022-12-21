@@ -404,3 +404,19 @@ input::placeholder {
         margin-right: 1rem;
       }
 }
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100vw;
+        height: 142vh;
+    }
+
+    .choice-container {
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+    #question {
+        padding: 1rem 3rem;
+    }
+}
