@@ -44,6 +44,7 @@ While there will be more deliberation on the project design and development proc
     -   [Device Testing](#device-testing)
 
 -   [Validation](#validation)
+    -   [JavaScript](#javascript)
     -   [HTML](#html)
     -   [CSS](#css)
     -   [Lighthouse](#lighthouse)
@@ -324,11 +325,23 @@ The deployed website was tested on multiple browser applications to test cross-c
 | Device | Image(s) |
 | ------ | -------- |
 | Monster Abra Laptop | ![Laptop1](assets/images/bg-image.png) |
-| Iphone 7 Plus Smartphone | ![Samsung-A](assets/images/samsung-index.jpg) ![Samsung-B](assets/images/samsung-inst.jpg) ![Samsung-C](assets/images/samsung-quiz.jpg) ![Samsung-D](assets/images/samsung-result.jpg) ![Samsung-D](assets/images/samsung-leader.jpg) |
-| Samsung Galaxy A51 |![IPhone-A](assets/images/samsung-index.jpg) ![Iphone-B](assets/images/samsung-inst.jpg) ![IPhone-C](assets/images/samsung-quiz.jpg) [IPhone-D](assets/images/samsung-result.jpg)  [IPhone-D](assets/images/samsung-leader.jpg) |
+| Samsung Galaxy A51 Smartphone | ![Samsung-A](assets/images/samsung-index.jpg) ![Samsung-B](assets/images/samsung-inst.jpg) ![Samsung-C](assets/images/samsung-quiz.jpg) ![Samsung-D](assets/images/samsung-result.jpg) ![Samsung-D](assets/images/samsung-leader.jpg) |
+| Iphone 7 Plus Smartphone |![IPhone-A](assets/images/iphone-index.jpg) ![Iphone-B](assets/images/iphone-inst.jpg) ![IPhone-C](assets/images/iphone-quiz.jpg) ![IPhone-D](assets/images/iphone-result.jpg)  ![IPhone-E](assets/images/iphone-leader.jpg) |
 | Lenovo IdeaPad Laptop | ![Laptop2](assets/images/lenovo-index.png) |
 
 ## Validation
+
+### JavaScript
+Validation in this area was successful apart from a few warnings for undefined and unused variables. The reason for this stem from the variables declared inside various functions in the code which are triggering these warnings. Nonetheless, there were no critical errors found during the validation process for the JS code.
+
+- Result Page Functionality
+    ![result.js](assets/images/jshint-result.png)
+- Quiz Page Functionality
+    ![quiz.js](assets/images/jshint-quiz.png)
+- Leaderboard Page Functionality
+    ![leaderboard.js](assets/images/jshint-leader.png)
+- Fun Facts Page Functionality
+    ![funfacts.js](assets/images/jshint-funfacts.png)
 
 ### HTML
 
