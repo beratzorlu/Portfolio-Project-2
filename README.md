@@ -73,15 +73,16 @@ This project aims to achieve the fundamental purpose providing a robust quiz gam
 ### User Stories
 
 - User Stories
-   - As a user, I want to be able to see the name of the quiz application in the centre of the screen
-   - As a user, I want to be able to have agency over toggling the music on or off.
+   - As a user, I want to be able to see the name of the quiz application in the centre of the screen.
    - As a user, I want to be able to see game instructions before starting the game.
+   - As a user, I want to be able to learn about the Ancient Rome.
    - As a user, I want to be able to track my score performance while playing the game.
    - As a user, I want to be able to track which question out of the total number of questions I am on.
    - As a user, I want to be able to track how much time I have left to complete all questions.
    - As a user, I want to be able to navigate the game with clearly labelled buttons.
    - As a user, I want to be able to save my final score under my username.
    - As a user, I want to be able to display my saved final score on a leaderboard on demand.
+   - As a user, I want to be able to receive feedback whenever I get an answer right or wrong.
    
 ---
 
@@ -202,32 +203,38 @@ The below elements are available to be experienced by the user across the websit
 
 - #### Navigation Buttons
 
-![navigation buttons](assets/images/nav-buttons.png)
+    ![navigation buttons](assets/images/nav-buttons.png)
 
 
 - #### Background/Hero Image
 
-![background image](assets/images/bg-image.png)
+    ![background image](assets/images/bg-image.png)
 
 - #### Border Image
 
-![border image](assets/images/border-image.png)
+    ![border image](assets/images/border-image.png)
 
-This feature was custom designed to provide unique styling to the borders of the container elements in the markup 
+    This feature was custom designed to provide unique styling to the borders of the container elements in the markup 
 
 - #### Favicon
 
-![favicon](assets/images/favicon.png)
+    ![favicon](assets/images/favicon.png)
 
-Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that also fit different browsers and devices is an important concern in this area. 
+    Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that also fit different browsers and devices is an important concern in this area. 
 
-[Canva](https://www.canva.com/) was the service that allowed the design and creation of this element.
+    [Canva](https://www.canva.com/) was the service that allowed the design and creation of this element.
 
 - #### Fun Facts
 
-![favicon](assets/images/funfact.png)
+    ![favicon](assets/images/funfact.png)
 
-Random fun facts about ancient rome displayed in the welcome and leaderboard pages.
+    Random fun facts about ancient rome displayed in the welcome and leaderboard pages.
+
+- #### Personal Credit and GitHub Link
+
+    ![personal credit](assets/images/personal-credit.png)
+
+    Users can find a label directing them to the project's GitHub repository and its developer; Berat Zorlu.
 
 ### Quiz Page
 
@@ -285,10 +292,33 @@ Random fun facts about ancient rome displayed in the welcome and leaderboard pag
 
 ## Testing 
 
+The testing process involved manual testing with the help of family and friends. The general feedback referred to responsivity issues and a problem with accurate answer detection. These problems were later solved, please see the [bug fixes section](#bug-fixes) for further details.
+
 - ### User Stories Testing 
 
+| User Goal | Status | Proof(s) |
+| --------- | --------------- | -------- |
+| As a user, I want to be able to see the name of the quiz application in the centre of the screen. | Successful | ![Title](assets/images/welcome-title.png) ![Title Screen](assets/images/bg-image.png) |
+| As a user, I want to be able to see game instructions before starting the game. | Successful | ![Instructions](assets/images/instructions.png) |
+| As a user, I want to be able to track my score performance while playing the game. | Successful | ![Score Tracker](assets/images/score.png) |
+| As a user, I want to be able to track which question out of the total number of questions I am on. | Successful | ![Progress Bar](assets/images/progress-bar.png) |
+| As a user, I want to be able to track how much time I have left to complete all questions. | Successful | ![Timer](assets/images/timer.png) |
+| As a user, I want to be able to navigate the game with clearly labelled buttons. | Successful | ![Navigation Buttons](assets/images/nav-buttons.png) |
+| As a user, I want to be able to save my final score under my username. | Successful | ![Final Score](assets/images/final-score1.png) ![Final Score](assets/images/final-score2.png) ![Final Score](assets/images/player-reg.png) |
+| As a user, I want to be able to display my saved final score on a leaderboard on demand. | Successful | ![Leaderboard](assets/images/rankings.png) |
+| As a user, I want to be able to learn about the Ancient Rome. | Successful | ![Fun Facts](assets/images/funfact.png) |
+| As a user, I want to be able to receive feedback whenever I get an answer right or wrong. | Successful | ![Correct](assets/images/correct.png) ![Incorrect](assets/images/incorrect.png) |
 
 - ### Browser Testing
+
+The deployed website was tested on multiple browser applications to test cross-compatibility. Chrome, Firefox and Edge were the preferred platforms and the website loaded successfully across all tested browsers.
+
+| Browser | Image |
+| ------- | ----- |
+| Chrome | ![Chrome Browser Test]() |
+| Firefox | ![Firefox Browser Test]() |
+| Edge | ![Edge Browser Test]() |
+
 
 - ### Device Testing
 

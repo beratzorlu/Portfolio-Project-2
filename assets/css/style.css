@@ -72,7 +72,7 @@ footer {
 /* Welcome Page */
 .container {
     width: 70vw;
-    height: 100vh;
+    height: 78vh;
     margin: 0 auto;
     background: var(--carmine);
     border: 6px solid var(--honey-yellow);
