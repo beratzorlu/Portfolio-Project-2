@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function resetScore() {
         score = 0;
         scoreText.innerText = 0;
-        localStorage.setItem('recentScore', score); //Add text for no time.
+        localStorage.setItem('recentScore', score);
     }
 
     startGame();

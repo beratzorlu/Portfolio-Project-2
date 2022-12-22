@@ -72,7 +72,7 @@ footer {
 /* Welcome Page */
 .container {
     width: 70vw;
-    height: 100vh;
+    height: 81vh;
     margin: 0 auto;
     background: var(--carmine);
     border: 6px solid var(--honey-yellow);
@@ -315,7 +315,7 @@ input::placeholder {
 
 @media only screen and (min-width: 992px) {
     .container {
-        height: 100vh;
+        height: 91vh;
     }
 } 
 
@@ -323,7 +323,7 @@ input::placeholder {
 @media screen and (max-width: 768px) {
     .container {
         width: 89vw;
-        height: 81vh;
+        height: 88vh;
         margin-top: 7.5rem
     }
 
