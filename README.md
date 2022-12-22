@@ -489,6 +489,7 @@ This project was deployed utilizing GitHub pages using the following procedure;
 - Diff Checker: For looking for differences between two pieces of code. This helped me identify my mistakes.
 - CSS Gradient: Used for generating custom CSS gradients for stylizing buttons.
 - Rapid Tables: Used for converting Hex values to RGB.
+- Am I Responsive: Used to test responsivity across multiple device resolutions simultaneously.
 
 ---
 
